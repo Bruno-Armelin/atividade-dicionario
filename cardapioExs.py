@@ -41,10 +41,7 @@ def ex7(dict):
     dictIngredientes = {}
     for idx, prato in dict.items():
         for ing in prato:
-            if ing in dictIngredientes:
-                dictIngredientes[ing] = dictIngredientes[ing] + 1
-            else:
-                dictIngredientes[ing] = 1
+            dictIngredientes[ing] = dictIngredientes[ing] + 1 if ing in dictIngredientes else 1
 
 
 ex2()
